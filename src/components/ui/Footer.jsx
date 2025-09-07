@@ -17,7 +17,7 @@ const Footer = () => {
           <a href="#" className='text-white mx-2'>FaInstagram</a>
         </div> */}
 
-        <p className='small mb-0'>&copy; 2024 Jyoriya_Store</p>
+        <p className='small mb-0'>&copy; 2025 Jyoriya_Store</p>
       </div>
     </footer>
   )

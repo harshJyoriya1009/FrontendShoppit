@@ -4,7 +4,7 @@ import { jwtDecode } from "jwt-decode";
 // export const BASE_URL = "http://127.0.0.1:8000"
 
 
-export const BASE_URL = import.meta.env.VITE_BASE_URL || "http://127.0.0.1:8000";
+export const BASE_URL = import.meta.env.VITE_BASE_URL || "https://jyoriya-store-ljs6.onrender.com";
 
 const api = axios.create({
     baseURL: BASE_URL

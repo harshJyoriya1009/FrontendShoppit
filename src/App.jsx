@@ -6,7 +6,7 @@ import ProductPage from "./components/product/ProductPage";
 import { useEffect, useState } from "react";
 import api from "./api";
 import CartPage from "./components/cart/CartPage";
-import CheckOutPage from "./components/checkout/CheckOutPage";
+import CheckoutPage from "./components/checkout/CheckoutPage";
 import LoginPage from "./components/user/LoginPage";
 import ProtectedRoute from "./components/ui/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
@@ -40,7 +40,7 @@ const App = () => {
           <Route index element={<HomePage />} />
           <Route path="products/:slug" element={<ProductPage setNumCartItems={setNumCartItems} />}/>
           <Route path ="cart" element={<CartPage setNumCartItems={setNumCartItems} />}/>
-          <Route path="checkout" element={<ProtectedRoute> <CheckOutPage /> </ProtectedRoute>} />
+          <Route path="checkout" element={<ProtectedRoute> <CheckoutPage /> </ProtectedRoute>} />
           <Route path="login" element={<LoginPage />}/>
           <Route path="profile" element={<UserProfilePage />}/>
           <Route path="*" element={<NotFoundPage/>} />

@@ -12,6 +12,7 @@ import ProtectedRoute from "./components/ui/ProtectedRoute";
 import { AuthProvider } from "./context/AuthContext";
 import UserProfilePage from "./components/user/UserProfilePage";
 import PaymentStatusPage from "./components/payment/PaymentStatusPage";
+import ScrollToTop from "./components/home/ScrollToTop";
 
 const App = () => {
 
@@ -34,6 +35,7 @@ const App = () => {
   return (
     <AuthProvider>
     <BrowserRouter>
+    <ScrollToTop /> 
       <Routes>
         
         <Route path="/" element={<MainLayout numCartItems={numCartItems} />}>

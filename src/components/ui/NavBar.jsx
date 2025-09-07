@@ -21,9 +21,8 @@ const NavBar = ({numCartItems}) => {
                 >
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <div className='collapse navbar-collapse' id='navbarContent'>
+            {/* <div className='collapse navbar-collapse' id='navbarContent'> */}
                 <NavBarLink/>
-                </div>
                 <Link to="/cart" className={`btn btn-dark ms-3 rounded pill position-relative ${styles.responsiveCart}`}>
                 <FaCartShopping/>
                 {numCartItems == 0 || <span
@@ -31,6 +30,7 @@ const NavBar = ({numCartItems}) => {
                 style={{fontSize:'0.8rem', padding:'0.5rem 0.65rem', backgroundColor:'#6050DC'}}>{numCartItems }</span>}
                 
                 </Link>
+            {/* </div> */}
         </div>
     </nav>
   )

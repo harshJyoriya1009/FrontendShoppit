@@ -2,7 +2,7 @@ import OrderSummary from "./OrderSummary"
 import PaymentSection from "./PaymentSection"
 import useCartData from "../../hooks/useCartData"
 
-const CheckOutPage = () => {
+const CheckoutPage = () => {
 
   const {cartitems , setCartItems , cartTotal , setCartTotal , loading } = useCartData()
 
@@ -16,4 +16,4 @@ const CheckOutPage = () => {
   )
 }
 
-export default CheckOutPage
+export default CheckoutPage

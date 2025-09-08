@@ -4,7 +4,7 @@ import Error from "../ui/Error";
 import api from "../../api";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
-
+import { Link } from "react-router-dom";
 
 const LoginPage = () => {
 
@@ -91,17 +91,18 @@ const LoginPage = () => {
             </div>
 
             {/* Buttons */}
-            <div className="d-flex justify-content-between mb-3">
-              <button type="submit" disabled={loading} className="btn btn-primary w-50 me-2">
-                Login
-              </button>
-              <button type="button" className="btn btn-outline-secondary w-50">
-                Signup
-              </button>
-            </div>
+          <div className="d-flex justify-content-between mb-3">
+            <button type="submit" disabled={loading} className="btn btn-primary w-50 me-2">
+              Login
+            </button>
+            <Link to="/register_user" className="btn btn-outline-secondary w-50">
+              Signup
+            </Link>
+          </div>
+
 
             {/* Forgot Password */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <button
                 type="button"
                 className="btn btn-link text-decoration-none"
@@ -109,7 +110,7 @@ const LoginPage = () => {
               >
                 Forgot Password?
               </button>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>
